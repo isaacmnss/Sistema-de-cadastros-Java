@@ -5,6 +5,7 @@ public class Menu {
     ListarUsuarios listarUsuarios = new ListarUsuarios();
     CadastroPergunta cadastroPergunta = new CadastroPergunta();
     DeletarPergunta deletarPergunta = new DeletarPergunta();
+    PesquisaUsuario pesquisaUsuario = new PesquisaUsuario();
 
     public void execute(){
         System.out.println("=============================================================");
@@ -38,6 +39,7 @@ public class Menu {
                 break;
             case 5:
                 System.out.println("5 - Pesquisar usuário por nome ou idade ou email\n");
+                pesquisaUsuario.executar();
                 break;
             default:
                 System.out.println("Opção inválida. Encerrando aplicação...");
